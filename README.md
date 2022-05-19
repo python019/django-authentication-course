@@ -1,2 +1,2 @@
 # Django Authentication Course 
-## by <a href="https://www.subux.uz">SubUx</a>
+## by <a href="http://www.subux.uz">SubUx</a>
