@@ -5,7 +5,7 @@ from .forms import CustomUserCreationForm
 def home(request):
     return render(request, 'index.html')
 
-class SigninView(CreateView):
+class SignupView(CreateView):
     form_class = CustomUserCreationForm
     success_url = '/accounts/login'
-    template_name = "registration/signin.html"
+    template_name = "registration/signup.html"
