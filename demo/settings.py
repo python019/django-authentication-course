@@ -1,4 +1,5 @@
 from pathlib import Path
+from pickle import FALSE
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -109,3 +110,12 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
+
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+if DEBUG is False:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
